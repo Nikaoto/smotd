@@ -10,7 +10,7 @@ Description:
     this case) and exit.
 
 Installing:
-    clone the repository and run `go install`.
+    Requires golang. Clone the repository and run `go install`.
 
 Options:
     -i interval
