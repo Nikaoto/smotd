@@ -19,17 +19,15 @@ Ideally, smotd should be run from a script which is executed regularly
 stdout, write the current time and date to the history file (.smotd_hist in
 this case) and exit.
 
-OPTIONS:
-	-i interval_in_seconds
-		When used, must also include a positive integer interval_in_seconds. For
-		example: smotd message.txt .smotd_history -i 7200
-		This will make smotd check if 7200 seconds (2 hours) passed since the last
-		time the message was shown and if so will update .smotd_history and print
-		message.txt to stdout.
+Options:
+	-i interval
+        Makes smotd print the message every 'interval' seconds. For example,
+        'smotd message.txt .smotd_history -i 7200' will make smotd check if 7200
+        seconds (2 hours) passed since the last time the message was shown and
+        if so will update .smotd_history and print message.txt to stdout.
 
 	-h, --help
 		Show this help text and exit.
-
 `
 
 func main() {
