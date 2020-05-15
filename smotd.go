@@ -12,7 +12,7 @@ const ResetHour = 6
 const SecondsInDay = 3600 * 24
 const ShowInterval = 3600 * 2 // every 2 hours
 const HelpText = `smotd - simple message of the day
-usage: smotd message_file .smotd_hist [-i interval]
+Usage: smotd message_file .smotd_hist [-i interval]
 
 Ideally, smotd should be run from a script which is executed regularly
 (from .bashrc for example). It will print the contents of message_file to
