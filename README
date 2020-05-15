@@ -1,0 +1,27 @@
+smotd - simple message of the day
+usage: smotd message_file .smotd_hist [-i interval]
+
+Ideally, smotd should be run from a script which is executed regularly
+(from .bashrc for example). It will print the contents of message_file to
+stdout, write the current time and date to the history file (.smotd_hist in
+this case) and exit.
+
+INSTALLING:
+    clone the repository and run `go install`.
+
+OPTIONS:
+	-i interval_in_seconds
+		When used, must also include a positive integer interval_in_seconds. For
+		example: `smotd message.txt .smotd_history -i 7200`
+		This will make smotd check if 7200 seconds (2 hours) passed since the last
+		time the message was shown and if so will update .smotd_history and print
+		message.txt to stdout.
+
+	-h, --help
+		Show this help text and exit.
+
+AUTHOR:
+    Nikoloz Otiashvili
+
+LICENSE:
+	2-clause BSD. See LICENSE file provided alongside the source.
